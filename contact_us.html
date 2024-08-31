@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <h3>Contact Form</h3>
+        <!--
+        form= form
+        action = where the form data will be sent
+        method = how the form data will be sent
+        
+        -->
+        <form action="/contact_us_action.html" method="POST">
+            <!--
+            label = label
+for =the id/name of the input element
+-->
+            <!--
+input = input field
+type = type of input field
+id = id of the input field
+name = name of the input field
+placeholder = placeholder text
+-->
+            <label for="user_name">Full Name:</label>
+            <input type="text" id="user_name" name="user_name" placeholder="Enter your full name" />
+
+            <!-- output = ( user_name= "<string>" ) -->
+            <br />
+            <br />
+
+            <label for="user_email">Email:</label>
+            <input type="email" id="user_email" name="user_email" placeholder="Enter your email" />
+            <!-- output =(user_email = "<email>") -->
+            <br />
+            <br />
+
+            <label for="user_password">Password:</label>
+            <input type="password" id="user_password" name="user_password" placeholder="Enter your password" />
+            <!-- output = (user_password="<password>") -->
+            <br />
+            <br />
+
+            <label for="user_dob">Date of Birth:</label>
+            <input type="date" id="user_dob" name="user_dob" />
+            <!-- output = (user_dob="01.04.1997") -->
+            <br />
+            <br />
+
+            <label for="user_id_number">Id Number:</label>
+            <input type="number" id="user_id_number" name="number" placeholder="Enter your id number" />
+            <!-- output = (user_id_number=111) -->
+            <br />
+            <br />
+
+            <label for="user_message">Message:</label>
+            <textarea name="user_message" id="user_message">
+
+        what you up to?
+    </textarea>
+            <!-- output = (user_message="<message>") -->
+            <br />
+            <br />
+
+            <label for="user_country">Chose Your Country</label>
+            <select id="user_country" name="user_country">
+                <option value="Kenya"> Kenya</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Rwanda">Rwanda</option>
+                <option value="Burundi">Burundi</option>
+            </select>
+            <!-- output = (user_country="Kenya") => (
+ (user_country="Kenya"),
+ (user_country="Uganda"),
+ (user_country="Tanzania"),
+ (user_country="Rwanda")
+ (user_country="Burundi")
+ )) -->
+            <br />
+            <br />
+            <label for="user_gender">Gender</label>
+            <div name="user_gender">
+                <input type="radio" name="user_gender" value="male" checked /> Male
+                <input type="radio" name="user_gender" value="female" /> Female
+            </div>
+            <!-- output = (user_gender="male" | user_gender="female") -->
+            <br />
+            <br />
+            <label for="user_hobbies">Hobbies</label>
+            <div name="hobbies">
+                <input type="checkbox" name="hobbies" value="reading" /> Reading
+                <input type="checkbox" name="hobbies" value="swimming" /> Swimming
+                <input type="checkbox" name="dancing" value="dancing" /> Dancing
+                <input type="checkbox" name="hobbies" value="singing"> Singing
+            </div>
+            <br />
+            <br />
+            <!-- output output = (
+             user_hobbies = ("reading" , )
+             user_hobbies = ("reading" , "swimming" , "dancing" , "sining")
+             user_hobbies = ("reading" , "swimming" , "sining")
+             user_hobbies = ("reading" , "sining")
+             etc....
+             ) -->
+            <br />
+            <br />
+            <!--
+             -->
+            <!-- progress = progress bar
+             value = current value
+             max = maximum value
+             -->
+            <progress value="70" max="100">70%</progress>
+            <br />
+            <br />
+            <meter value="2" min="0" max="10" low="3" high="8" optimum="6">
+                2 out of 10
+            </meter>
+            <br />
+            <br />
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+
+        </form>
+    </section>
+</body>
+
+</html>
