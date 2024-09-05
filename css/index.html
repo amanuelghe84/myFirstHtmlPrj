@@ -4,6 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Css basic</title>
+    <style>
+            #h2{
+                color: rgb(255, 0, 81);
+                font: 20px
+            }
+            .shiny{
+                color: green;
+                font: 40px;
+            }
+            #h2-different{
+                color: blue;
+                font: 60px;
+
+            }
+            #h2-more-different{
+                color: yellow;
+            }
+    </style>
+    <!-- 
+        css selectors are three types
+        1. element selector/ tag selector
+        2. id selector
+        3. class selector
+        id overwrites class and class overwrites element
+         -->
+        <!-- 
+         selector can be 
+         1. element selector [h2]
+         2. id selector [#h2-different]
+         3. class selector[.shiny]
+            [selector]{
+            style: value
+            } -->
+    
+    <style>
+        body{
+            background-color: #f0f0f0;
+            color: #333;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        section{
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0,1);
+            margin: 20px;
+            
+        }
+
+    </style>
 </head>
 <body>
     
@@ -39,8 +93,52 @@
 
             name e.g. red, blue,green,yellow,brown
             hex code e.g. #ff0000. #00ff00, #0000ff, #ffff00
-            rgb code-->
-        <h1 style="color:brown">Hello World</h1>
+            rgb code e.g. rgb(255.0,0), rgb(0,255,0),rgb(0,0,255)-->
+
+            <!-- 
+                stylesheets can be applied in three ways
+                1. inline style = <h1 style= "color: #f00; font-size:20px"
+                2. internal style =followed by  <style>
+        body{
+            background-color: #f0f0f0;
+            color: #333;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        section{
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0,1);
+            margin: 20px;
+        }
+    </style> 
+                3. external style
+                 -->
+
+        <h1 style="color: #f00; font-size: 20px"
+        >Hello World</h1>
+        <h2 >Hello World #h2 one </h2>
+        <!-- 
+            id naming convention
+                1. id should start with a letter [a-z or A-Z]
+                2. id can contain letters [a-z , A-Z], numbers [0-9], hyphen[-], underscore[_]
+                3.id should not contain spaces
+
+            -->
+
+        <h2 id="h2-different">Hello World #h2 two </h2>
+        <h2>Hello World #h2 three</h2>
+        <h2 class="shiny" id="h2-more-different">Hello World #h2 four</h2>
+        <h2 class="shiny">Hello World #h2 five</h2>
+        <h2 class="shiny">Hello World #h2 six</h2>
+        <h3>Hello World #h3</h3>
+        <h4>Hello World #h4</h4>
+        <h5>Hello World #h5</h5>
+        <h6>Hello World #h6</h6>
     </section>
 </body>
 </html>
