@@ -1,6 +1,10 @@
-   head
+
+   body{
+
+   background-color: rgb(250, 222, 215);
+   }
         #p {
-            color: green; font-size: 25px;
+            color: rgb(117, 52, 197); font-size: 25px;
            }
           #h2 {
               color: blue; font-size: 40px;
@@ -11,11 +15,11 @@
            }
   
            #h2_different{
-              color: rgb(139, 109, 0); font-size: 40px;
+              color: rgb(139, 76, 0); font-size: 40px;
            }
   
   
           #h2_more_different {
-              color: rgb(47, 0, 255); font-size: 50px;
+              color: rgb(255, 132, 0); font-size: 50px;
           }
            
