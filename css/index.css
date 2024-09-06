@@ -1,0 +1,21 @@
+   head
+        p {
+            color: green; font-size: 25px;
+           }
+           h2 {
+              color: blue; font-size: 40px;
+           }
+     
+           .shiny {
+              color: mediumvioletred; font-size: 30px;
+           }
+  
+           #h2_different{
+              color: rgb(139, 109, 0); font-size: 40px;
+           }
+  
+  
+          #h2_more_different {
+              color: rgb(47, 0, 255); font-size: 50px;
+          }
+           
