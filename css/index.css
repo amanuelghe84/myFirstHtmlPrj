@@ -1,25 +1,70 @@
 
-   body{
+body{
+   background-color:beige ;
+   /* background-image: url(../images/background_html.png); */
+}
+  h2 {
+     color: rgb(51, 0, 255);
+     font-size: 40px;
+  }
 
-   background-color: rgb(250, 222, 215);
-   }
-        #p {
-            color: rgb(117, 52, 197); font-size: 25px;
-           }
-          #h2 {
-              color: blue; font-size: 40px;
-           }
-     
-           .shiny {
-              color: mediumvioletred; font-size: 30px;
-           }
+  .shiny {
+     color: rgb(21, 199, 66);
+     font-size: 30px;
+  }
+
+  #h2_different{
+     color: rgb(30, 0, 139);
+     font-size: 40px;
+  }
+
+
+ #h2_more_different {
+     color: rgb(255, 123, 0);
+     font-size: 50px;
+ }
   
-           #h2_different{
-              color: rgb(139, 76, 0); font-size: 40px;
-           }
-  
-  
-          #h2_more_different {
-              color: rgb(255, 132, 0); font-size: 50px;
-          }
-           
+ p {
+   color: rgb(0, 11, 128);
+   font-size: 30px;
+   text-align:justify;
+   /* background-color: rgb(235, 242, 240); */
+   /* background-image: url(../images/background_html.png);
+   background-size:contain; */
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   /* font-style: italic; */
+   font-weight: bold;
+
+  }
+
+  h3{
+   text-align: center;
+  }
+
+  #myBox{
+   width: 300px;
+   height: 300px;
+   background-color: rgba(0, 100, 2, 0.503);
+   border-color: rgb(25, 0, 255);
+   border-style: solid;
+   border-width: 20px;
+   text-align: center;
+   padding: 10%;
+   margin: 10px;
+   /* text-align: center; */
+   /* padding-top: 20%; */
+   /* padding-left: 10%;
+   padding-bottom: 20%;
+   padding-right: 20%; */
+  }
+  .ourBox{
+   width: 300px;
+   height: 300px;
+   background-color: blueviolet;
+   border-style: solid;
+   border-width: 20px;
+   text-align: 20%;
+   padding: 10%;
+   margin-top: 10px;
+   text-align: center;
+  }
